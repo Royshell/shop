@@ -16,13 +16,13 @@
                         </ol>
                         <div class="carousel-inner">
                           <div class="item active">
-                            <img alt="First slide" src="http://placehold.it/800x200" style="width: 100%;">
+                            <img alt="First slide" src="http://www.fawnby.com/wp-content/uploads/Shop-Button-800x200-Smaller.png" style="width: 100%;">
                           </div>
                           <div class="item">
-                            <img alt="Second slide" src="http://placehold.it/800x200" style="width: 100%;">
+                            <img alt="Second slide" src="http://static1.squarespace.com/static/5654c2e4e4b0c0b1609ae3a3/t/571d0d0859827e9ed75858e7/1461521680023/Are+you+ready+to+grow+an+amazing+fiction+readership+and+start+selling+your+novel+today%3F+Get+started+with+these+foundational+tips+from+ShesNovel.com." style="width: 100%;">
                           </div>
                           <div class="item">
-                            <img alt="Third slide" src="http://placehold.it/800x200" style="width: 100%;">
+                            <img alt="Third slide" src="https://d16wp86s16nsnf.cloudfront.net/steamertrading/cms/ae27d254.Summer%20sale.png/800x200.fit.Summer%20sale.png" style="width: 100%;">
                           </div>
                         </div>
                         <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">

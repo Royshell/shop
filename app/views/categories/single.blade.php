@@ -21,7 +21,7 @@
            @foreach($category->products as $product)
                <div class="col-sm-4 col-lg-4 col-md-4">
                  <div class="thumbnail">
-                   <img src="http://placehold.it/320x120" alt="">
+                   <img src="{{ $product->banner}}" alt="">
                    <div class="caption">
                        <h4 class="pull-right">${{ number_format($product->pricing, 2);}}</h4>
                        <h4><a href="{{url('products/'.$product->slug)}}">{{$product->name}}</a></h4>
