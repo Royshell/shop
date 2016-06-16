@@ -4,7 +4,9 @@
     <div class="row">
         <div class="col-md-3">
           @include('partials.sidebar.categories', array('categories' => $categories,'current' => 0))
+          <div class="sale">Sale!!</div>
         </div>
+
         <div class="col-md-9">
             <div class="row" style="margin-bottom:30px;">
                 <div class="col-md-12">                                              
@@ -65,6 +67,7 @@
           <h4><a href="{{url('products')}}/<%= slug %>"><%= name %></a></h4>
           <p><%= short_description %></p>
       </div>
+      <div class="play-now"><a href="{{url('products')}}/<%= slug %>"> MORE INFO</a></div>
       <div class="ratings">
           <p>
             <% for (var i = 1; i <= 5; i++) { %>

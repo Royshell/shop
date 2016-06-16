@@ -8,16 +8,24 @@ body {
     background: radial-gradient(ellipse at top left, rgba(105,155,200,1) 0%,rgba(181,197,216,1) 57%);
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#699bc8', endColorstr='#b5c5d8',GradientType=1 );
 }
-
-
-.thumbnail{ 
+.navbar-inverse {
+    background: #092756;
+    background: -moz-radial-gradient(0% 100%, ellipse cover, rgba(104,128,138,.4) 10%,rgba(138,114,76,0) 40%),-moz-linear-gradient(top, rgba(57,173,219,.25) 0%, rgba(42,60,87,.4) 100%), -moz-linear-gradient(-45deg, #670d10 0%, #092756 100%);
+    background: -webkit-radial-gradient(0% 100%, ellipse cover, rgba(104,128,138,.4) 10%,rgba(138,114,76,0) 40%), -webkit-linear-gradient(top, rgba(57,173,219,.25) 0%,rgba(42,60,87,.4) 100%), -webkit-linear-gradient(-45deg, #670d10 0%,#092756 100%);
+    background: -o-radial-gradient(0% 100%, ellipse cover, rgba(104,128,138,.4) 10%,rgba(138,114,76,0) 40%), -o-linear-gradient(top, rgba(57,173,219,.25) 0%,rgba(42,60,87,.4) 100%), -o-linear-gradient(-45deg, #670d10 0%,#092756 100%);
+    background: -ms-radial-gradient(0% 100%, ellipse cover, rgba(104,128,138,.4) 10%,rgba(138,114,76,0) 40%), -ms-linear-gradient(top, rgba(57,173,219,.25) 0%,rgba(42,60,87,.4) 100%), -ms-linear-gradient(-45deg, #670d10 0%,#092756 100%);
+    background: -webkit-radial-gradient(0% 100%, ellipse cover, rgba(104,128,138,.4) 10%,rgba(138,114,76,0) 40%), linear-gradient(to bottom, rgba(57,173,219,.25) 0%,rgba(42,60,87,.4) 100%), linear-gradient(135deg, #670d10 0%,#092756 100%);
+    border-color: transparent;
+}
+.navbar {
+     border-radius: 0;
+}
+.thumbnail { 
     padding: 0;
 }
-
 .carousel-control, .item{
      border-radius: 4px;
- }
-
+}
 .caption{
     height: 130px;
     overflow: hidden;
@@ -32,18 +40,123 @@ body {
     max-height: 202px;
     width: 100%;
 }
-
+.sale {
+    border-radius:50%;    
+    -webkit-transition: -webkit-transform .8s ease-in-out;
+    -ms-transition: -ms-transform .8s ease-in-out;
+    transition: transform .8s ease-in-out;
+    background: #fff;
+    text-align: center;
+    padding: 10%;
+    font-weight: bold;
+    font-size: 3vw;
+    text-transform: uppercase;
+    color: #BD2031;
+}
+.sale:hover{
+    transform:rotate(360deg);
+    -ms-transform:rotate(360deg);
+    -webkit-transform:rotate(360deg);
+}
 .ratings {
     color: #d17581;
     padding-left: 10px;
     padding-right: 10px;
 }
-
+a.list-group-item {
+        background: #F2F2F2;
+}
+a.list-group-item:hover {
+     background: #F2F2FD;
+}
+a[href*='sports'].list-group-item {
+    background: url(../img/icons/basketball_icon_48_48.gif) #F2F2F2 89% center no-repeat;
+    background-size: 10%;
+}
+a[href*='sports'].list-group-item:hover {
+    background: url(../img/icons/basketball_icon_48_48.gif)  #F2F2FD 89% center no-repeat;
+    background-size: 15%;
+}
 .thumbnail .caption-full {
     padding: 9px;
     color: #333;
 }
-
+#paginated-content >div >.thumbnail>.play-now {
+    position: absolute;
+    width: 86%;
+    top: 0%;
+    height: 53%;
+    opacity: 0;
+    z-index: 9999;
+    -webkit-transition: opacity 0.5s linear;
+    left: 7%;
+}
+#paginated-content >div >.thumbnail>.play-now:hover {
+    opacity: 1;
+    background: rgba(151, 181, 210,0.4);
+    visibility: visible;
+}
+:not(#paginated-content) .play-now {
+    position: absolute;
+    top:0;
+    width: 88.5%;
+    left: 5.5%;
+    height: 52.2%;
+    opacity: 0;
+    z-index: 9999;
+    -webkit-transition: opacity 0.5s linear;
+}
+:not(#paginated-content) .play-now:hover {
+    opacity: 1;
+    background: rgba(151, 181, 210,0.4);
+    visibility: visible;
+}
+.play-now a{
+    display: block;
+    background: #fff;
+    width: 63%;
+    border-radius: 45%;
+    margin: auto;
+    top: 31%;
+    height: 19%;
+    line-height: 2.6em;
+    text-align: center;
+    font-weight: bold;
+    position: relative;
+}
+.play-now a:hover {
+    text-decoration: none;
+}
+.modal {
+    background: #c7b39a;
+    color: #785E43;
+    padding: 1%;
+    border-radius: 10px;
+    max-width: 500px;
+    box-shadow: 1px 4px 1px rgba(0,0,0,0.5);
+    margin: auto;
+    overflow: hidden;
+    height: 44%;
+    z-index: 99999999999;
+}
+.modal-dialog h3 {
+    margin: 0;
+}
+.modal-dialog button {
+    color: #785E43;
+    position: absolute;
+    top: -33%;
+    right: 22%;
+    font-weight: bold;
+    position: absolute;
+    border: 2px solid #785E43;
+    border-radius: 66px;
+    text-align: center;
+    background-color: transparent;
+} 
+.modal-cont {
+    margin: 3%;
+}
 footer{
   margin-top: 50px;
   margin-bottom: 30px;
@@ -80,4 +193,14 @@ footer{
 }
 .selectize-control.loading::before {
     opacity: 1;
+}
+@media screen and (max-width: 1200px) {
+    .play-now {
+        height: 48%;
+    }
+}
+@media screen and (max-width: 992px) {
+    .play-now {
+        height: 49%;
+    }
 }

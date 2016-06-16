@@ -27,6 +27,7 @@
                        <h4><a href="{{url('products/'.$product->slug)}}">{{$product->name}}</a></h4>
                        <p>{{$product->short_description}}</p>
                    </div>
+                    <div class="play-now"><a href="{{url('products')}}/<%= slug %>"> MORE INFO</a></div>
                    <div class="ratings">
                        <p class="pull-right">{{$product->rating_count}} {{ Str::plural('review', $product->rating_count);}}</p>
                        <p>
